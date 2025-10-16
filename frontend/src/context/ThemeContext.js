@@ -17,11 +17,17 @@ export const ThemeProvider = ({ children }) => {
   });
 
   useEffect(() => {
+    const root = document.documentElement;
+    const body = document.body;
+    
     localStorage.setItem('theme', theme);
+    
     if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
+      root.classList.add('dark');
+      body.classList.add('dark');
     } else {
-      document.documentElement.classList.remove('dark');
+      root.classList.remove('dark');
+      body.classList.remove('dark');
     }
   }, [theme]);
 
