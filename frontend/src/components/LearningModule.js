@@ -203,7 +203,7 @@ const LearningModule = () => {
                       {!showAnswer ? (
                         <Button
                           onClick={() => setShowAnswer(true)}
-                          className="w-full bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900"
+                          className="w-full"
                         >
                           Show Answer
                         </Button>
@@ -309,7 +309,7 @@ const LearningModule = () => {
                       <Button
                         size="lg"
                         onClick={togglePomodoro}
-                        className="bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900"
+                        className=""
                       >
                         {isPomodorActive ? (
                           <>
@@ -431,7 +431,7 @@ const LearningModule = () => {
                 </div>
                 <Button
                   onClick={addCard}
-                  className="w-full bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900"
+                  className="w-full"
                   disabled={!newCard.front.trim() || !newCard.back.trim()}
                 >
                   <Plus className="mr-2 h-4 w-4" />
