@@ -97,7 +97,7 @@ const JhanaMeditation = () => {
                         setShowGuidance(true);
                       }}
                       disabled={isActive}
-                      className={selectedType.id === type.id ? 'bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900' : 'border-neutral-300 dark:border-neutral-700'}
+                      className=""
                     >
                       {type.name}
                     </Button>
@@ -118,7 +118,7 @@ const JhanaMeditation = () => {
                     <Button
                       size="lg"
                       onClick={toggleTimer}
-                      className="bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200"
+                      className=""
                     >
                       {isActive ? (
                         <>
