@@ -146,7 +146,7 @@ const RoutineBuilder = () => {
           </div>
           <Dialog open={showNewRoutineDialog} onOpenChange={setShowNewRoutineDialog}>
             <DialogTrigger asChild>
-              <Button className="bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900">
+              <Button className="">
                 <Plus className="mr-2 h-4 w-4" />
                 New Routine
               </Button>
@@ -164,7 +164,7 @@ const RoutineBuilder = () => {
                 />
                 <Button
                   onClick={createNewRoutine}
-                  className="w-full bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900"
+                  className="w-full"
                   disabled={!newRoutineName.trim()}
                 >
                   Create Routine
@@ -332,7 +332,7 @@ const RoutineBuilder = () => {
                     />
                     <Button
                       onClick={addHabitToRoutine}
-                      className="bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900"
+                      className=""
                       disabled={!newHabitName.trim()}
                     >
                       <Plus className="h-4 w-4" />
@@ -367,7 +367,7 @@ const RoutineBuilder = () => {
                 </p>
                 <Button
                   onClick={() => setShowNewRoutineDialog(true)}
-                  className="bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900"
+                  className=""
                 >
                   <Plus className="mr-2 h-4 w-4" />
                   Create First Routine
