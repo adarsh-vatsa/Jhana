@@ -84,7 +84,7 @@ const Dashboard = () => {
                 </div>
                 <Button
                   variant="ghost"
-                  className="w-full justify-between group-hover:bg-neutral-100 dark:group-hover:bg-neutral-900"
+                  className="w-full justify-between"
                 >
                   Open Module
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
